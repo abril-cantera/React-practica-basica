@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App/index.js';
+import { createPortal } from 'react-dom';
 
 
 
@@ -12,4 +13,7 @@ root.render(
   </React.StrictMode>
 );
 
-
+createPortal(
+  <App />,
+  document.getElementById('modal')
+)
