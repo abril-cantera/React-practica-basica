@@ -1,19 +1,19 @@
 import React from 'react';
 import { useTodos } from './useTodos';
-import { TodoHeader } from '../ui/TodoHeader';
-import { TodoCounter } from '../ui/TodoCounter';
-import { TodoSearch } from '../ui/TodoSearch';
-import { TodoList } from '../ui/TodoList';
-import { TodoItem } from '../ui/TodoItem';
-import { TodosError } from '../ui/TodosError';
-import { TodosLoading } from '../ui/TodosLoading';
-import { EmptyTodos } from '../ui/EmptyTodos';
-import { Modal } from '../ui/Modal';
-import { ChangeAlert } from '../ui/ChangeAlert';
-import { TodoForm } from '../ui/TodoForm/TodoForm';
-import { CreateTodoButton } from '../ui/CreateTodoButtom';
+import { TodoHeader } from '../TodoHeader';
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { TodoItem } from '../TodoItem';
+import { TodosError } from '../TodosError';
+import { TodosLoading } from '../TodosLoading';
+import { EmptyTodos } from '../EmptyTodos';
+import { Modal } from '../Modal';
+import { ChangeAlert } from '../ChangeAlert';
+import { TodoForm } from '../TodoForm/TodoForm';
+import { CreateTodoButton } from '../CreateTodoButtom';
 
-function App() {
+export function HomePage() {
   const {
     state,
     staetUpdaters,
@@ -94,5 +94,3 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;
